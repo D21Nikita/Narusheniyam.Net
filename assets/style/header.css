@@ -1,0 +1,48 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для навигационной панели */
+.navbar {
+    background-color: #004f54;
+
+}
+
+
+
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00a7a9;
+}
+
+/* Стили для административной панели */
+.nav-item .nav-link[href="/admin/"] {
+    background-color: #007b7d;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* Стили для активного элемента меню */
+.nav-item.active .nav-link {
+    color: #00a7a9;
+    font-weight: bold;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        border-color: #00a7a9;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%2300a7a9" stroke-width="2" stroke-linecap="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    }
+}
